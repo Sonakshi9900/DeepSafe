@@ -1,6 +1,7 @@
 {
   "name": "deepsafe-frontend",
   "version": "0.1.1",
+  "author": "Sonakshi Kumari",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

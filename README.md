@@ -287,7 +287,7 @@ The easiest way to contribute is adding a new detection model. See [docs/adding-
 
 ## License
 
-MIT License. See [LICENSE](LICENSE).
+MIT License (c) Sonakshi Kumari. See [LICENSE](LICENSE).
 
 ---
 
@@ -304,7 +304,7 @@ DeepSafe integrates the following open-source research:
 
 ```bibtex
 @misc{deepsafe,
-  author = {Siddharth Kumar},
+  author = {Sonakshi Kumari},
   title = {DeepSafe: Enterprise-Grade Deepfake Detection Platform},
   year = {2025},
   publisher = {GitHub},

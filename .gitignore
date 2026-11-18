@@ -20,3 +20,9 @@ sdk/.venv/
 sdk/deepsafe_sdk.egg-info/
 docs/superpowers
 public_dataset
+
+# Environment & Builds
+venv/
+.env
+*.db
+frontend/build/

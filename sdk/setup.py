@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="deepsafe-sdk",
     version="0.1.0",
+    author="Sonakshi Kumari",
     packages=find_packages(),
     install_requires=[
         "fastapi>=0.100.0",

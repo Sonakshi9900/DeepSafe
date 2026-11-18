@@ -98,7 +98,7 @@ const Footer = () => {
           {/* Bottom Bar */}
           <div className="mt-8 pt-8 border-t border-neutral-700/50 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="text-sm text-neutral-500">
-              © {currentYear} DeepSafe. All rights reserved.
+              © {currentYear} Sonakshi Kumari. All rights reserved.
             </div>
             <div className="flex space-x-6 text-xs text-neutral-500">
               <a href="/privacy" className="hover:text-neutral-400 transition-colors">Privacy Policy</a>
