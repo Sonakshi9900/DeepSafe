@@ -5,13 +5,10 @@ const UploadDropzone = ({
     previewUrl,
     mediaType,
     onFileChange,
-    onRemoveFile,
-    onLoadSample,
-    onLoadDemoVideo
+    onRemoveFile
 }) => {
     return (
         <div className="upload-container" style={{ marginBottom: '1.5rem' }}>
-            {/* Dropzone Card */}
             <div className="card" style={{
                 padding: '2rem 1.5rem',
                 borderStyle: 'dashed',
@@ -99,57 +96,6 @@ const UploadDropzone = ({
                         </button>
                     </div>
                 )}
-            </div>
-
-            {/* Benchmark Preset Samples */}
-            <div style={{ marginTop: '1rem', textAlign: 'center' }}>
-                <span style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: '500', display: 'block', marginBottom: '0.5rem' }}>
-                    Quick Benchmark Test Samples:
-                </span>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center' }}>
-                    <button
-                        type="button"
-                        onClick={() => onLoadSample('/demo_images/real_sample.jpg', 'real_sample.jpg')}
-                        className="btn btn-secondary"
-                        style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem', borderColor: 'rgba(16, 185, 129, 0.4)' }}
-                    >
-                        📷 Camera Portrait (Real)
-                    </button>
-                    <button
-                        type="button"
-                        onClick={() => onLoadSample('/demo_images/fake_sample_faceswap.jpg', 'fake_sample_faceswap.jpg')}
-                        className="btn btn-secondary"
-                        style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem', borderColor: 'rgba(239, 68, 68, 0.4)' }}
-                    >
-                        🎭 FaceSwap Splicing (Fake)
-                    </button>
-                    <button
-                        type="button"
-                        onClick={() => onLoadSample('/demo_images/fake_sample_stylegan.jpg', 'fake_sample_stylegan.jpg')}
-                        className="btn btn-secondary"
-                        style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem', borderColor: 'rgba(239, 68, 68, 0.4)' }}
-                    >
-                        🤖 StyleGAN Face (Fake)
-                    </button>
-                    <button
-                        type="button"
-                        onClick={() => onLoadSample('/demo_images/fake_sample_gan.jpg', 'fake_sample_gan.jpg')}
-                        className="btn btn-secondary"
-                        style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem', borderColor: 'rgba(239, 68, 68, 0.4)' }}
-                    >
-                        🎨 GAN Synthesis (Fake)
-                    </button>
-                    {onLoadDemoVideo && (
-                        <button
-                            type="button"
-                            onClick={onLoadDemoVideo}
-                            className="btn btn-secondary"
-                            style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}
-                        >
-                            🎬 Demo Video
-                        </button>
-                    )}
-                </div>
             </div>
         </div>
     );

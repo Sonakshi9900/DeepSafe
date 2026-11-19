@@ -7,6 +7,7 @@ import UploadDropzone from './components/UploadDropzone';
 import AnalysisControls from './components/AnalysisControls';
 import VerdictCard from './components/VerdictCard';
 import ForensicMetricsTable from './components/ForensicMetricsTable';
+import BenchmarkTestBench from './components/BenchmarkTestBench';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -173,8 +174,6 @@ function Dashboard({ onLogout }) {
                     mediaType={mediaType}
                     onFileChange={handleFileChange}
                     onRemoveFile={handleRemoveFile}
-                    onLoadSample={handleLoadSample}
-                    onLoadDemoVideo={handleLoadDemoVideo}
                 />
 
                 {/* Action Controls: Submit & Clear */}
@@ -208,6 +207,12 @@ function Dashboard({ onLogout }) {
 
                 {/* Forensic Diagnostic Breakdown Table */}
                 <ForensicMetricsTable results={results} />
+
+                {/* Quick 1-Click Benchmark Test Bench (Positioned At The Bottom Below Results) */}
+                <BenchmarkTestBench
+                    onLoadSample={handleLoadSample}
+                    onLoadDemoVideo={handleLoadDemoVideo}
+                />
             </main>
 
             <Footer />
